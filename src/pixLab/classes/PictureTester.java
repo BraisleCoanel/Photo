@@ -18,6 +18,14 @@ public class PictureTester
     beach.explore();
   }
   
+  public static void testPokeball()
+  {
+	  Picture sample = new Picture("beach.jpg");
+	  sample.explore();
+	  sample.pokeballFilter(sample.getHeight()/2, sample.getWidth()/2);
+	  sample.explore();
+  }
+  
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
@@ -66,6 +74,7 @@ public class PictureTester
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
+    testPokeball();
     testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
